@@ -6,7 +6,7 @@ module.exports = {
       summary: 'A curious man living in Ankara.',
     },
     description: 'Sabri Berkay Aydin\'s Personal Blog',
-    siteUrl: 'https://sbaydin.com/blog',
+    siteUrl: 'https://blog.sbaydin.com',
     social: {
       twitter: 'sbaydin',
       github: 'sbayd',
