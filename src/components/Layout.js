@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
-import { FiTerminal, FiSun, FiMoon } from 'react-icons/fi';
+import {
+  FiTerminal, FiSun, FiMoon, FiGithub, FiTwitter, FiLinkedin, FiFileText,
+} from 'react-icons/fi';
 import { keyframes } from '@emotion/react';
 
 import ThemeContext from './ThemeContext';
@@ -50,7 +52,7 @@ const Layout = ({ location, children }) => {
           to="/"
         >
           <FiTerminal css={terminalStyles} />
-          S. Berkay Aydin Blog
+          S. Berkay Aydin&apos;s Blog
         </Link>
       </h2>
     );
@@ -117,7 +119,54 @@ const Layout = ({ location, children }) => {
           />
         </Button>
       </header>
-      {location.pathname === rootPath && (
+      <div style={{
+        marginBottom: rhythm(2),
+        marginTop: -20,
+        maxWidth: 500,
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        alignContent: 'center',
+      }}
+      >
+        <a
+          href="https://twitter.com/sbayd"
+          target="_blank"
+          rel="noreferrer"
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
+          <FiTwitter style={{ marginRight: 5 }} />
+          Twitter
+        </a>
+        <a
+          href="https://github.com/sbayd"
+          target="_blank"
+          rel="noreferrer"
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
+          <FiGithub style={{ marginRight: 5 }} />
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/sbaydin"
+          target="_blank"
+          rel="noreferrer"
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
+          <FiLinkedin style={{ marginRight: 5 }} />
+          LinkedIn
+        </a>
+        <a
+          href="https://cv.sbaydin.com"
+          target="_blank"
+          rel="noreferrer"
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
+          <FiFileText style={{ marginRight: 5 }} />
+          Resume
+        </a>
+      </div>
+      {/* {location.pathname === rootPath && (
       <div
         css={{
           display: 'flex',
@@ -126,7 +175,7 @@ const Layout = ({ location, children }) => {
       >
         <Link to="/about">About</Link>
       </div>
-      )}
+      )} */}
       <main>{children}</main>
     </div>
   );
