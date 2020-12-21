@@ -183,4 +183,8 @@ export default `
     float: left; /* 1 */
     min-width: 100%; /* 2 */
   }
+
+  hr {
+    background-color: rgba(255, 255, 255, 0.87);
+  }
   `;
