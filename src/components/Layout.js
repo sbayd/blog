@@ -106,6 +106,7 @@ const Layout = ({ location, children }) => {
             className={theme}
             css={{
               position: 'absolute',
+              pointerEvents: 'none',
               background: darkTheme.background,
               borderRadius: '50%',
               width: 32,
@@ -126,6 +127,7 @@ const Layout = ({ location, children }) => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
+        flexWrap: 'wrap',
         alignContent: 'center',
       }}
       >
@@ -133,7 +135,9 @@ const Layout = ({ location, children }) => {
           href="https://twitter.com/sbayd"
           target="_blank"
           rel="noreferrer"
-          style={{ display: 'flex', alignItems: 'center' }}
+          style={{
+            display: 'flex', alignItems: 'center', paddingLeft: 15, paddingRight: 15,
+          }}
         >
           <FiTwitter style={{ marginRight: 5 }} />
           Twitter
@@ -142,7 +146,9 @@ const Layout = ({ location, children }) => {
           href="https://github.com/sbayd"
           target="_blank"
           rel="noreferrer"
-          style={{ display: 'flex', alignItems: 'center' }}
+          style={{
+            display: 'flex', alignItems: 'center', paddingLeft: 15, paddingRight: 15,
+          }}
         >
           <FiGithub style={{ marginRight: 5 }} />
           GitHub
@@ -151,7 +157,9 @@ const Layout = ({ location, children }) => {
           href="https://linkedin.com/in/sbaydin"
           target="_blank"
           rel="noreferrer"
-          style={{ display: 'flex', alignItems: 'center' }}
+          style={{
+            display: 'flex', alignItems: 'center', paddingLeft: 15, paddingRight: 15,
+          }}
         >
           <FiLinkedin style={{ marginRight: 5 }} />
           LinkedIn
@@ -160,7 +168,9 @@ const Layout = ({ location, children }) => {
           href="https://cv.sbaydin.com"
           target="_blank"
           rel="noreferrer"
-          style={{ display: 'flex', alignItems: 'center' }}
+          style={{
+            display: 'flex', alignItems: 'center', paddingLeft: 15, paddingRight: 15,
+          }}
         >
           <FiFileText style={{ marginRight: 5 }} />
           Resume
